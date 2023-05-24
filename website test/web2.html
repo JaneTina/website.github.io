@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="'width=device-width,inital-scale=1.0"/>
+    <meta charset="='utf-8"/>
+    <title>CSS selector</title>
+    <link rel="stylesheet" type="text/css" href="web1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
+</head>   
+<body>
+    <div class="a">CSS</div>   
+     <!-- </hr>:分隔線 (-內文的註解長這樣)-->
+
+     <div class="three">
+        <div class="four"><a href="web.html">Home Page</a></div>
+        <div class="four"><a href="web1.html">HTML</a></div>
+        <div class="four">CSS</div>
+        <div class="four"><a href="web3.html">JavaScript</a></div>   
+        <div class="four"><a href="other.html">Others</a></div> 
+        <div class="four"><a href="source.html">Data Sources</a></div>      
+    </div>   
+
+    </div>
+    <div class="one">
+    <img src="images\flower.jpg"class="round"width="30%"height="250">
+    <img src="images\flower2.jpg"class="round"width="30%"height="250">
+    <img src="images\flower3.jpg"class="round"width="30%"height="250">
+    </div>
+    
+    <div id="a1" class="d">CSS歷史</div>
+    <div class="c">
+    1994年，哈肯·維姆·萊提出了CSS的最初建議。伯特·波斯當時正在設計一個叫做Argo的瀏覽器，他們決定一起合作設計CSS。在CSS中，一個檔案的樣式可以從其他的樣式表中繼承下來。讀者在有些地方可以使用他自己更喜歡的樣式，這種方式使作者和讀者都可以靈活地加入自己的設計，混合各人的愛好。哈肯·萊於1994年在芝加哥的一次會議上第一次展示了CSS的建議，1995年他與波斯一起再次展示這個建議。1996年底，CSS已經完成。1996年12月，哈肯·萊與伯特·波斯發布了CSS規範的第1個版本。這也成了哈肯·萊的博士論文的一部分。當時已有的主流瀏覽器的核心架構完全不適合解析CSS的語法，加上早年設計師濫用HTML標籤來表達樣式、且漠不關心代碼校驗，所以CSS等到幾年之後才流行起來。
+    </div>
+
+    <div id="a1" class="d">CSS是什麼?</div>
+    <div class="c">CSS是一種用來指定文件該用什麼方式呈現的語言，可以讓我們建立出一個好看的網頁，像是改變標題和連結的顏色、尺寸。它可以用在建立布局，像是劃分出主要的內容以及包含相關資訊的側邊欄，甚至可以建立動畫效果。但CSS不能單獨使用，必須與HTML一起協同工作，為HTML起裝飾作用。
+    <br>「 HTML用來處理網頁主要結構，CSS用來處理排版和樣式細節 」
+    </div>
+     
+    <div id="a1" class="d">CSS基本概念</div>
+    <div class="c">
+    <img src="images\3.png">上圖的架構稱為規則集 (rule set)，或是簡稱為規則 (rule)。
+    每個rule都必須由 {} 包住。
+    <br><a href="https://developer.mozilla.org/zh-TW/docs/Learn/Getting_started_with_the_web/HTML_basics">圖片來源</a>
+    <div class="e">
+    <li>選擇器（Selector） </li>
+    <ul>用來決定CSS樣式的適用標籤，
+        在這個規則的最前頭為 HTML 的元素名。它將決定你 HTML 裡什麼元素將被你接下來的設定影響（在這個範例中,就是 段落元素 p）。
+    </ul>
+    <li>宣告（Declaration）</li>
+    <ul>單一個規則，例如 color: red; 指定了這個元素的呈現樣貌。</ul>
+    <li>屬性 (Properties)</li>
+    <ul>修改屬性是改變你　HTML　元素的一種方法,可以選擇哪些屬性用來影響 rule。
+        以 : 做區分，不同Declaration由 ; 來區分。
+        語法：屬性名稱:屬性內容
+    </ul>
+    <li>屬性值 (Property value)</li>
+    <ul>屬性值就是位於屬性右邊，在冒號（:）之後，從眾多的可能樣式選出一個給予屬性。</ul>
+    </div>
+
+
+    <div id="a1" class="d">套用CSS</div>
+    <div class="c">
+    透過標籤的style來套用CSS樣式語法：
+    ＜h3 style="CSS 樣式"＞標題＜/h3＞
+    ＜div style="CSS 樣式"＞內容＜/div＞
+  
+    <div class="e">
+    <li>使用「乾淨的」標籤</li>    
+    <ul>沒有預設樣式的標籤：＜div＞一般文字＜/div＞、＜span＞一般文字＜/spap＞
+        有預設樣式的標籤：＜h3＞預設粗體、放大＜/h3＞
+    </ul>
+    <li>標籤顯示模式</li>
+
+    <ol>決定標籤會以怎樣的型態顯示在畫面上<br><br>
+
+   <li>行內模式(inline)</li>
+    ＜span＞、＜a＞、＜img＞ 不會自動換行
+    <li>區塊模式(block)</li>
+    ＜div＞、＜h1＞~＜h5＞、＜ul＞、＜table＞ 會自動換行
+    <li>隱藏模式(none)</li>
+    透過CSS的display屬性設定
+    </ol>
+
+    <li>文字相關設定</li>
+    <ul>設定文字粗細<br>
+        font-weight:bold<br>
+        font-weight:normal
+    </ul>
+    <ul>設定文字大小<br>
+        font-size:16px<br>
+        font-size:30px
+    </ul>
+    <ul>文字裝飾<br>
+        text-decoration:underline<br>
+        text-decoration:line-through
+    </ul>
+    <ul>文字在區塊中的對齊方式<br>
+        text-align:left<br>
+        text-slign:center
+    </ul>
+    </div>
+    </div>
+
+
+
+   
+    </div>
+
+
+
+
+
+
+
+
+

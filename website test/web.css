@@ -1,0 +1,54 @@
+/*標籤名稱選擇器*/
+body{font-size:20px; 
+    background-color: rgba(225, 181, 171, 0.759);
+    background-image: url("./imges/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Noto Sans TC', sans-serif;
+}       
+/*ID選擇器*/
+#a1{color:black}
+
+/*class 選擇器*/
+.a{ /*大標題*/
+    font-weight:bold;
+    font-size:50px
+}
+.b{/*照片置中*/
+    display:block;
+    margin:auto;
+}
+
+.c{ /*內文*/
+    padding:10px ;
+    border:1px dash;
+}   /*.c:區塊跟文字的空格、線的粗細樣式*/
+
+.one{
+    display:flex;   /*讓下一層次水平排列*/
+} 
+.two{   /*首頁*/
+    flex:none;  /*固定配置*/
+    background-color:rgb(227, 182, 224);
+    width: 10%;
+    text-align:center;/*文字置中*/
+    border-style:outset;
+}
+.three{ /*分頁區域*/
+    background-color: rgb(227, 182, 224);
+    display:flex;   /*讓下一層次水平排列*/
+    justify-content: center;    /*下一層水平對齊*/           
+    align-content: center;  /*下一層垂直對齊*/
+    flex:auto; /*自動把剩下空間填滿*/
+
+}
+.four{  /*分頁*/
+    flex:none;
+    width:20%;
+    text-align:center; /*文字置中*/
+    border-style:outset;
+    /*margin-right:10px 與前一區塊空格10PX*/
+}
+.d{
+    margin-right:10px
+}

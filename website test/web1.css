@@ -1,0 +1,139 @@
+/*標籤名稱選擇器*/
+body{font-size:20px; 
+    background-color: rgb(246, 227, 225);
+    background-image: url("./images/cherry blossoms.png");
+    background-size: 80%; 
+    /*background-color: linear-gradient(to right, #facfa5,#faedcb, #facfa5);*/
+    font-family: 'Noto Sans TC', sans-serif;
+}       
+/*ID選擇器*/
+#a1{color:black}
+
+/*class 選擇器*/
+.a{ /*大標題*/
+    font-family: 'Palatino';
+    font-weight:bold;
+    font-size:50px
+}
+.b{/*照片置中*/
+    display:block;
+    margin:auto;
+}
+.c{ /*內文*/
+    padding:10px ;
+    border:1px dash;
+}   /*.c:區塊跟文字的空格、線的粗細樣式*/
+.d{ /*小標題用*/
+    font-size:  30px;  
+    margin-top:30px;
+    margin-bottom:20px; 
+    font-weight:bold;
+    text-align:center;
+} 
+.e{ /*內文上下空格*/
+    margin-top:30px;
+    margin-bottom:20px;    /*區塊下方的空格*/ 
+}
+.f{
+    margin-top:30px;
+    margin-bottom:20px;
+    margin-top:50px;
+    text-align:center;
+    font-size:20px 
+}
+.one{
+    display:flex;   /*讓下一層次水平排列*/
+} 
+
+.two{   /*首頁*/
+    flex:none;  /*固定配置*/
+    background-color: rgb(239, 202, 222);
+    width: 10%;
+    text-align:center;/*文字置中*/
+    border-style:outset;
+}
+
+.three{ /*分頁區域*/
+    display:flex;   /*讓下一層次水平排列*/
+    justify-content: center;    /*下一層水平對齊*/           
+    align-content:center;  /*下一層垂直對齊*/
+    flex:auto; /*自動把剩下空間填滿*/
+
+}
+.four{  /*分頁*/
+    background-color: rgb(239, 202, 222);
+    flex:none;
+    width:16%;
+    text-align:center; /*文字置中*/
+    border-style:outset;
+    border-radius:10px;
+    margin: 3px
+    /*margin-right:10px 與前一區塊空格10PX*/
+}
+.four:hover{/*滑鼠停留按鈕分頁*/
+    transform: scale(1.05);/*變大1.05*/
+    background-color: rgb(255, 199, 251);  
+  }
+  .four:active{/*點及按鈕分頁*/
+    transform: scale(1);
+  }
+
+.image-group img {
+    float: left;
+    margin-right: 30px;
+}
+.image-group:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.info p{
+    color: rgb(0, 0, 0);
+    font-size:25px; 
+    font-family: 'Palatino'; 
+}
+.info:hover{
+transition: opacity 500ms;
+opacity: 1;
+}
+.j{/*副標題*/
+    font-size:  30px;
+    font-weight:bold;/*粗體*/
+}    
+
+
+
+.one1 {
+    display: flex; /* 讓下一層次水平排列 *  }
+  
+  .one1 a {
+    /* 超連結的預設樣式，可依需求自行調整 */
+    text-decoration: none; /* 不顯示底線 */
+    color: inherit; /* 繼承父元素的顏色 */
+  }
+  
+  .one1 a:hover {
+    /* 超連結的滑鼠懸停樣式，可依需求自行調整 */
+    text-decoration: underline; /* 滑鼠懸停時顯示底線 */
+  }
+.img {
+    border-radius: 100px;/*圓角*/
+    padding: 50px;
+}   
+.video{
+    font-size: 20px;
+    font-weight:bold;
+}
+.round{
+    border-radius: 10%;
+    margin: 25px;  
+}
+.round2{
+    border-radius: 10%;
+}
+/*下一部第9集*/
+
+
+
+
+

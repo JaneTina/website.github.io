@@ -1,0 +1,116 @@
+/*標籤名稱選擇器*/
+ body{font-size:20px;
+    background-color:antiquewhite;
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Palatino';
+    }  
+/*ID選擇器*/
+#a1{color:rgba(14, 13, 13, 0.982)}
+#b1{
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 500px; /* 距離容器下方10px */
+  right: 300px; /* 距離容器右側70px */
+  font-size:28px
+}
+        
+/*class 選擇器*/
+.a{
+  font-family: 'Palatino';
+  font-weight:bold;
+  font-size:50px
+}
+.b{/*副標題*/
+font-size:  25px;
+font-weight:bold;/*粗體*/
+}
+.c{
+padding:10px ;
+border:1px dash;
+position: absolute;/*架設流程目錄絕對位置*/
+top: 110px;
+left: 1000px;
+}   /*.c:區塊跟文字的空格、線的粗細樣式*/
+.one{
+display:flex;   /*讓下一層次水平排列*/
+} 
+.three{
+display:flex;   /*讓下一層次水平排列*/
+justify-content: center;    /*下一層水平對齊*/           
+align-content: center;  /*下一層垂直對齊*/
+flex:auto; /*自動把剩下空間填滿*/
+}
+.four{
+background-color: rgba(252, 198, 248);
+flex:none;
+width:16%;
+text-align:center; /*文字置中*/
+border-style:outset;
+border-radius: 10px;
+margin: 3px
+}
+.four:hover{/*滑鼠停留按鈕分頁*/
+  transform: scale(1.05);/*變大1.05*/
+  background-color: rgb(247, 172, 242);  
+}
+.four:active{/*點及按鈕分頁*/
+  transform: scale(1);
+}
+/*margin-right:10px 與前一區塊空格10PX*/
+
+.five{
+  align-content: center;  /*下一層垂直對齊*/
+}
+
+.card{
+/* 設定父親定位點 */
+position: relative;
+width: 270px;
+float:left;
+margin: 10px;
+}
+img{
+display: block;
+width: 100%;
+height: auto;
+}
+.info{
+/*   display: none; */
+opacity: 0;
+position: absolute;
+box-sizing: border-box;
+background-color: rgba(0,0,0,.3);
+top: 0;
+width: 100%;
+height: 100%;
+text-align: center;
+padding-top: 40px;
+}
+.info p{
+color: #fff;
+}
+.info:hover{
+  transition: opacity 500ms;
+  opacity: 1;
+}
+
+.e{ /*中標題*/
+  position: absolute;
+  top: 120px; /* 距離容器下方10px */
+  right: 40px; /* 距離容器右側70px */
+  font-weight:bold;
+  font-size:30px;
+}
+.f{
+  font-size: 25px;
+  position: relative;
+  top: 300px;
+  right: 200px;
+}
+
+  
+/*      background-color: rgba(255, 228, 196, 0.759);
+      background-repeat: no-repeat;
+      background-size: cover;

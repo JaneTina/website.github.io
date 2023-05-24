@@ -1,0 +1,49 @@
+body{font-size:20px;
+    background-color: rgb(254, 245, 245);
+    background-image: url("./images/cherry blossoms.png");
+    background-size: 90%; 
+    font-family: 'Noto Sans TC', sans-serif;
+  }  
+.img {
+    border: 1px solid #ccc;
+   /* width: auto;
+    height: auto;*/
+    border-radius: 30px;/*圓角*/
+    padding: 20px;
+    background-color: rgba(241, 215, 241, 0.5   );
+}
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+.desc {
+    padding: 10 px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 17px;
+    margin-left:50px; 
+    margin-top: 5px; 
+}
+
+.horizontal{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    text-align: center;
+}
+.team{
+    text-align: center;    
+    font-size:23px;
+}
+/*background-image: url("./images/cherry blossoms.png");
